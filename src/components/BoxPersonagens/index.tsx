@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import TabelaPersonagens from '../TabelaPersonagens'
 import { Box } from './style'
 import {
-  Character,
+  CharacterProps,
   InfosResponse,
   ResponseCharacter,
 } from '@/utils/types/character'
@@ -19,7 +19,7 @@ export interface Request {
 
 export default function BoxPersonagens() {
   const [info, setInfos] = useState<InfosResponse>()
-  const [characters, setCharacters] = useState<Character[]>([])
+  const [characters, setCharacters] = useState<CharacterProps[]>([])
   const [page, setPage] = useState<number>(1)
   const [loading, setLoading] = useState(false)
   const [url, setUrl] = useState<string>(

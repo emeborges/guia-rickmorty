@@ -3,14 +3,13 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  min-height: 100vh;
   background: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.text};
-  padding-top: 80px;
+  padding: 80px 0 1rem;
   margin: 0 auto;
 
   @media (max-width: 768px) {
-    padding: 0 0.5rem;
+    padding: 1rem 0.5rem;
   }
 
   .imageContainer {

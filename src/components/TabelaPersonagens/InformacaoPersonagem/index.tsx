@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { useRouter } from 'next/navigation'
+
 interface Props {
   Avatar: string
   Name: string
@@ -7,6 +9,7 @@ interface Props {
   Specie: string
   Episodes: number
   Status: string
+  id: string | number
 }
 
 export default function InformacaoPersonagem({
@@ -16,9 +19,11 @@ export default function InformacaoPersonagem({
   Specie,
   Episodes,
   Status,
+  id,
 }: Props) {
+  const router = useRouter()
   return (
-    <tr className={'conteudo'}>
+    <tr className={'conteudo'} onClick={() => router.push(`/character/${id}`)}>
       <td className={'avatarContainer'}>
         <Image
           src={Avatar}

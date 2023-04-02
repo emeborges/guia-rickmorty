@@ -8,5 +8,7 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: ${inter.style.fontFamily};
-    color: ${(props) => props.theme.colors.text}
+    color: ${(props) => props.theme.colors.text};
+    background: ${(props) => props.theme.colors.background}
+    min-height: 100vh;
  }`

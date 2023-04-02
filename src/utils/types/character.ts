@@ -15,7 +15,7 @@ export interface Location {
   url: string
 }
 
-export interface Character {
+export interface CharacterProps {
   id: number
   name: string
   status: string
@@ -32,5 +32,5 @@ export interface Character {
 
 export interface ResponseCharacter {
   info: InfosResponse
-  results: Character[]
+  results: CharacterProps[]
 }

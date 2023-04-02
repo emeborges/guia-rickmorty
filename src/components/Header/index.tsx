@@ -1,5 +1,6 @@
 'use client'
 
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import { ButtonTheme, HeaderBox } from './styles'
 import { dark, light } from '@/themes/theme'
@@ -11,6 +12,7 @@ interface Props {
   theme: string
 }
 export function Header({ toggleTheme, theme }: Props) {
+  const router = useRouter()
   return (
     <HeaderBox>
       <div>
@@ -19,6 +21,8 @@ export function Header({ toggleTheme, theme }: Props) {
           alt={'logo'}
           width={80}
           height={80}
+          onClick={() => router.push('/')}
+          className={'icon'}
         />
         <ButtonTheme onClick={toggleTheme}>
           {theme === 'dark' ? (

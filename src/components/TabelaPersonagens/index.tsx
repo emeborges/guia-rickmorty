@@ -7,10 +7,10 @@ import {
   MdOutlineKeyboardDoubleArrowRight,
 } from 'react-icons/md'
 
-import { Character, InfosResponse } from '@/utils/types/character'
+import { CharacterProps, InfosResponse } from '@/utils/types/character'
 
 interface Props {
-  characters: Character[]
+  characters: CharacterProps[]
   page: number
   info: InfosResponse | undefined
   url: string
@@ -28,7 +28,6 @@ export default function TabelaPersonagens({
   url,
   resp,
 }: Props) {
-  console.log(url)
   return (
     <Tabela>
       <thead>
@@ -52,6 +51,7 @@ export default function TabelaPersonagens({
               Specie={char.species}
               Episodes={char.episode.length}
               Status={char.status}
+              id={char.id}
             />
           ))}
       </tbody>
