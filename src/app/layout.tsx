@@ -24,6 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <html lang="en">
         <header>
           <title>Rick & Morty Guide</title>
+          <link rel="icon" href="/icon.png"></link>
         </header>
         <body className={inter.className}>
           <Header toggleTheme={toggleTheme} theme={theme.title} />
