@@ -12,4 +12,11 @@ export const Container = styled.div`
   @media (max-width: 650px) {
     padding: 80px 1rem;
   }
+
+  .back {
+    margin: 1rem 0;
+    cursor: pointer;
+    width: 20px;
+    font-size: 0.8rem;
+  }
 `

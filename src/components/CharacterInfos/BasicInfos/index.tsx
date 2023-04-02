@@ -23,24 +23,33 @@ export function BasicInfos({ character }: Props) {
         <div className="dadosBasicos">
           <h1>{character?.name}</h1>
           <div className={'status'}>
-            <p>{character?.gender}</p>
-            <p>{character?.status}</p>
-            <p>{character?.species}</p>
+            <div>
+              <span>Gender</span>
+              <p>{character?.gender}</p>
+            </div>
+            <div>
+              <span>Status</span>
+              <p>{character?.status}</p>
+            </div>
+            <div>
+              <span>Species</span>
+              <p>{character?.species}</p>
+            </div>
           </div>
         </div>
         <div className="dadosSecund">
           <div className="localizacoes">
             <div className={'status'}>
-              <p>Origin:</p>
+              <p className={'title'}>Origin:</p>
               <p>{character?.origin.name}</p>
             </div>
             <div className={'status'}>
-              <p>Location:</p>
+              <p className={'title'}>Location:</p>
               <p>{character?.location.name}</p>
             </div>
           </div>
           <div className="episodios">
-            <p>Total Episode:</p>
+            <p className={'title'}> Total Episode:</p>
             <p>{character?.episode.length}</p>
           </div>
         </div>

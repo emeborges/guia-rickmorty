@@ -80,11 +80,8 @@ export default function BoxPersonagens() {
     <Box>
       <div className="titleTable">
         <div>
-          <h3> Personagens </h3>
-          <p className="descricao">
-            Confira abaixo a lista de personagens, com a possibilidade de
-            gerenciar itens.
-          </p>
+          <h3> Characters </h3>
+          <p className="descricao">Check out the list of characters below.</p>
         </div>
         <input
           type="text"

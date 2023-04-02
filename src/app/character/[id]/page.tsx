@@ -8,6 +8,7 @@ import { CharacterProps } from '@/utils/types/character'
 import { Loader } from '@/components/Loader'
 import { BasicInfos } from '@/components/CharacterInfos/BasicInfos'
 import { EpisodesInfo } from '@/components/CharacterInfos/EpisodesInfo'
+import { useRouter } from 'next/navigation'
 
 interface Props {
   params: {
@@ -19,6 +20,7 @@ export default function Home({ params }: Props) {
   const [character, setCharacter] = useState<CharacterProps>()
   const [loading, setLoading] = useState(false)
   const id = params.id
+  const routes = useRouter()
 
   async function characterApi(id: string) {
     setLoading(true)
@@ -44,6 +46,9 @@ export default function Home({ params }: Props) {
             <Loader />
           ) : (
             <>
+              <div className="back" onClick={() => routes.back()}>
+                Return
+              </div>
               <BasicInfos character={character} />{' '}
               <EpisodesInfo character={character} />
             </>

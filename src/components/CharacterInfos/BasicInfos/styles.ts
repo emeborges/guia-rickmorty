@@ -57,6 +57,12 @@ export const BasicInfosBox = styled.div`
         width: 100%;
         display: flex;
         justify-content: space-between;
+
+        div {
+          span {
+            font-size: 0.7rem;
+          }
+        }
       }
     }
 
@@ -69,6 +75,10 @@ export const BasicInfosBox = styled.div`
       margin: 0 auto;
       padding-top: 1rem;
 
+      .title {
+        font-size: 0.8rem;
+        font-style: italic;
+      }
       @media (max-width: 650px) {
         max-width: 100%;
       }
