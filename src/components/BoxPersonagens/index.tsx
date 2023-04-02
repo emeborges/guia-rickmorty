@@ -54,7 +54,6 @@ export default function BoxPersonagens() {
 
   function clearFilters() {
     setUrl(`https://rickandmortyapi.com/api/character`)
-    console.log(url, 'foi aqui mesmo')
 
     setTimeout(
       () => resp('https://rickandmortyapi.com/api/character', 1, {}),
@@ -65,8 +64,6 @@ export default function BoxPersonagens() {
   function searchCharacterName(value: string) {
     const nome = value
     const qtde = nome.length
-
-    console.log(qtde)
 
     if (qtde > 1) {
       setLoading(true)

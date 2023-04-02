@@ -14,8 +14,6 @@ export function EpisodesInfo({ character }: Props) {
   const [qtde, setQtde] = useState(5)
   const selecionados = character?.episode.slice(0, qtde)
 
-  console.log(character?.episode ? qtde > character?.episode?.length : false)
-
   return (
     <EpisodesInfoBox
       seeMoreDisabled={
