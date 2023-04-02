@@ -13,6 +13,8 @@ declare module 'styled-components' {
       hover: string
       textSecoundary: string
       shadowPrimary: string
+      bgTable: string
+      tableHover: string
     }
   }
 }
