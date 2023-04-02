@@ -1,4 +1,4 @@
-#Introdução:
+# Introdução
   Neste aplicativo, foi utilizado o framework NextJs 13, que em sua parte, está com em série beta, por isso, algumas das funcionalidades desta versão não foram utilizadas.
   Para a personalização/estilização, foi utilizado o StyledComponents, utilizando, principalmente o manejo dos themas e cores, e também, a biblioteca ReactIcons, fornecendo ícones para melhor experiência do usuário.
   Para chamadas HTTPS, foi utilizado a biblioteca Axios.
